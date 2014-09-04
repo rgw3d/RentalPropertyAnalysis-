@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+ 	    android:id = "@+id/main_page_left_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentLeft = "true"
+ 	    />
+    
+ 	<TextView
+ 	    android:id = "@+id/main_page_right_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentRight = "true"
+ 	    />
+ 	
+    
+    <EditText android:id = "@+id/edit_monthy_rental"
+        	android:hint = "@string/edit_monthly_rental" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"
+        	/>
+    
+    <EditText android:id = "@+id/edit_on_time_discount"
+        	android:hint = "@string/edit_on_time_discount" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_monthy_rental"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+    		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <EditText android:id = "@+id/edit_vacancy_allowance"
+        	android:hint = "@string/edit_vacancy_allowance" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_on_time_discount"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <EditText android:id = "@+id/edit_other_income"
+        	android:hint = "@string/edit_other_income" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_vacancy_allowance"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    
+    <Button android:id = "@+id/next_button" 
+        android:text = "@string/button_next" 
+        android:onClick="sendMessage"
+        
+        
+        android:layout_width= "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@id/edit_other_income"
+        android:layout_centerHorizontal = "true"
+        android:layout_toLeftOf="@id/main_page_right_blank"
+      	android:layout_toRightOf = "@id/main_page_left_blank"
+        />
+
+
+</RelativeLayout>

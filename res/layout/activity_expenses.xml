@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+ 	    android:id = "@+id/main_page_left_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentLeft = "true"
+ 	    />
+    
+ 	<TextView
+ 	    android:id = "@+id/main_page_right_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentRight = "true"
+ 	    />
+ 	
+    
+    <EditText android:id = "@+id/edit_real_estate_taxes"
+        	android:hint = "@string/edit_real_estate_taxes" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"
+        	/>
+    
+    <EditText android:id = "@+id/edit_hazard_insurance"
+        	android:hint = "@string/edit_hazard_insurance" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_real_estate_taxes"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+    		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <EditText android:id = "@+id/edit_repair_maintenance"
+        	android:hint = "@string/edit_repair_maintenance" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_hazard_insurance"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <EditText android:id = "@+id/edit_annual_utilities"
+        	android:hint = "@string/edit_annual_utilities" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_repair_maintenance"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <EditText android:id = "@+id/edit_misc"
+        	android:hint = "@string/edit_misc" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_annual_utilities"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    
+    <Button android:id = "@+id/next_button" 
+        android:text = "@string/button_next" 
+        android:onClick="sendMessage"
+        
+        
+        android:layout_width= "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@id/edit_misc"
+        android:layout_centerHorizontal = "true"
+        android:layout_toLeftOf="@id/main_page_right_blank"
+      	android:layout_toRightOf = "@id/main_page_left_blank"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rental Property Analysis</string>
+    <string name="main_page_description">Enter the general info about the Property</string>
+    <string name="action_settings">Settings</string>
+    <!-- Property Locaiton -->
+    <string name="title_location">Property Location</string>
+    <string name="edit_street">Enter Street Address (305 Apache Trail)</string>
+    <string name="edit_city">Enter City (Miami Township)</string>
+    <string name="edit_state">Enter State (Ohio)</string>
+    <string name="edit_zip">Enter Zip Code (45150)</string>
+    <!-- Financing -->
+    <string name="edit_pruchase_price">Enter Purchase Price $ ($65,000)</string>
+    <string name="edit_interest_rate">Enter Interest Rate %% (8.25%%)</string>
+    <string name="edit_term_years">Enter Term in Years (15)</string>
+    <!-- Investment -->
+    <string name="edit_downpayment_amount">Enter Downpayment Amount $ ($13000)</string>
+    <string name="edit_closing_costs">Enter Closing Costs $ ($1500)</string>
+    <string name="edit_furnishings_equipment">Enter Furnishing/Equipment Costs $ ($2500)</string>
+    <string name="edit_improvements">Enter Improvement Costs $ ($30000)</string>
+    <!-- Income -->
+    <string name="edit_monthly_rental">Enter Monthly Rental Cost $ ($1000)</string>
+    <string name="edit_on_time_discount">Enter On Time Discount $ ($0)</string>
+    <string name="edit_vacancy_allowance">Enter Vacancy Allowance %% (5.0%%)</string>
+    <string name="edit_other_income">Enter Other Monthly Income $ ($0)</string>
+    <!-- Expenses (Annual) -->
+    <string name="edit_real_estate_taxes">Enter Annual Real Estate Taxes $ ($1043)</string>
+    <string name="edit_hazard_insurance">Enter Hazard Insurance Cost $ ($480)</string>
+    <string name="edit_repair_maintenance">Enter Repair/Maintenance Cost $ ($900)</string>
+    <string name="edit_annual_utilities">Enter Annual Utilities Cost $ ($600)</string>
+    <string name="edit_misc">Enter Miscellaneous Costs $ ($350)</string>
+    <!-- end -->
+    <string name="button_send">Send</string>
+    <string name="button_next">Next</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="title_activity_financing">Financing</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_investment">Investment</string>
+    <string name="title_activity_income">Income</string>
+    <string name="title_activity_expenses">Expenses</string>
+    <string name="title_activity_summary">Summary</string>
+
+</resources>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <TextView
+ 	    android:id = "@+id/main_page_left_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentLeft = "true"
+ 	    
+ 	    />
+ 	<TextView
+ 	    android:id = "@+id/main_page_right_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentRight = "true"
+ 	    />
+ 	
+ 	<TextView
+      android:id="@+id/main_page_description"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text = "@string/main_page_description"
+      android:layout_toLeftOf="@id/main_page_right_blank"
+      android:layout_toRightOf = "@id/main_page_left_blank"
+      android:layout_centerHorizontal = "true"
+      android:textSize = "18sp"
+      />
+ 	
+    
+    <EditText android:id = "@+id/edit_street"
+        	android:hint = "@string/edit_street" 
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"
+        	android:layout_below="@id/main_page_description"
+        	/>
+    
+    <EditText android:id = "@+id/edit_city"
+        	android:hint = "@string/edit_city" 
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_street"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+    		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <EditText android:id = "@+id/edit_state"
+        	android:hint = "@string/edit_state" 
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_city"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <EditText android:id = "@+id/edit_zip"
+        	android:hint = "@string/edit_zip" 
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_state"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    
+    <Button android:id = "@+id/next_button" 
+        android:text = "@string/button_next" 
+        android:onClick="sendMessage"
+        
+        android:layout_width= "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@id/edit_zip"
+        android:layout_centerHorizontal = "true"
+        android:layout_toLeftOf="@id/main_page_right_blank"
+      	android:layout_toRightOf = "@id/main_page_left_blank"
+        />
+    
+    
+    
+    
+</RelativeLayout>

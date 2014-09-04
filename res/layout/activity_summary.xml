@@ -1,0 +1,344 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <TextView
+ 	    android:id = "@+id/main_page_left_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentLeft = "true"
+ 	    />
+    
+ 	<TextView
+ 	    android:id = "@+id/main_page_right_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentRight = "true"
+ 	    />
+ 	
+ 	
+ 	<TextView
+ 	    android:id ="@+id/title_location"
+ 	    android:textSize = "20sp"
+ 	    android:text="@string/title_location"
+ 	    
+	    android:layout_width ="wrap_content"
+       	android:layout_height = "wrap_content"
+       	android:layout_toLeftOf="@id/main_page_right_blank"
+     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/street_name"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/title_location"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/city_name"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/street_name"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/state_name"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/city_name"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/zip_code"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/state_name"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	<TextView
+ 	    android:id ="@+id/title_financing"
+ 	    android:textSize = "20sp"
+ 	    android:text="@string/title_activity_financing"
+ 	    
+ 	    android:layout_below = "@id/zip_code"
+	    android:layout_width ="wrap_content"
+       	android:layout_height = "wrap_content"
+       	android:layout_toLeftOf="@id/main_page_right_blank"
+     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/purchase_price"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/title_financing"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/mortgage_amount"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/purchase_price"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/interest_rate"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/mortgage_amount"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/term_years"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/interest_rate"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/mortgage_payment"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/term_years"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+ 	    
+ 	  
+	<TextView
+	    android:id ="@+id/title_investment"
+ 	    android:textSize = "20sp"
+ 	    android:text="@string/title_activity_investment"
+ 	    
+	    android:layout_width ="wrap_content"
+       	android:layout_height = "wrap_content"
+       	android:layout_below = "@id/mortgage_payment"
+       	android:layout_toLeftOf="@id/main_page_right_blank"
+     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+	<TextView
+		 	    android:id="@+id/downpayment_amount"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/title_investment"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/closing_costs"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/downpayment_amount"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/fur_equip"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/closing_costs"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/improvements"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/fur_equip"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/total_invested"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/improvements"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+ 	    
+ 	   
+ 	    
+  	<TextView
+  	    android:id ="@+id/title_income"
+ 	    android:textSize = "20sp"
+ 	    android:text="@string/title_activity_income"
+ 	    
+	    android:layout_width ="wrap_content"
+       	android:layout_height = "wrap_content"
+       	android:layout_below = "@id/total_invested"
+       	android:layout_toLeftOf="@id/main_page_right_blank"
+     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+  	<TextView
+		 	    android:id="@+id/monthly_rental"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/title_income"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/on_time_discount"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/monthly_rental"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/vacancy_allowance"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/on_time_discount"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/other_income"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/vacancy_allowance"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/annual_rents"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/other_income"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/minus_vacancy"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/annual_rents"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/gross_rental_income"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/minus_vacancy"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+ 	    
+ 	    
+ 	<TextView
+ 	    android:id = "@+id/title_expenses"
+ 	    android:textSize = "20sp"
+ 	    android:text="@string/title_activity_expenses"
+ 	    
+	    android:layout_width ="wrap_content"
+       	android:layout_height = "wrap_content"
+       	android:layout_below = "@id/gross_rental_income"
+       	android:layout_toLeftOf="@id/main_page_right_blank"
+     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+ 	<TextView
+		 	    android:id="@+id/mortgage_payments"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/title_expenses"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/real_estate_taxes"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/mortgage_payments"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/hazard_insurance"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/real_estate_taxes"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/repair_maintenance"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/hazard_insurance"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/annual_utilities"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/repair_maintenance"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/misc"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/annual_utilities"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+		 	<TextView
+		 	    android:id="@+id/annual_expenses"
+		 	    android:textSize = "15sp"
+		 	    
+			    android:layout_width ="wrap_content"
+		       	android:layout_height = "wrap_content"
+		       	android:layout_below = "@id/misc"
+		       	android:layout_toLeftOf="@id/main_page_right_blank"
+		     	android:layout_toRightOf = "@id/main_page_left_blank"/>
+ 	    
+ 	    
+ 	    
+
+</RelativeLayout>
+</ScrollView>
