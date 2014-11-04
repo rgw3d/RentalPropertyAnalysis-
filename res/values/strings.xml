@@ -6,39 +6,61 @@
     <string name="action_settings">Settings</string>
     <!-- Property Locaiton -->
     <string name="title_location">Property Location</string>
-    <string name="edit_street">Enter Street Address (305 Apache Trail)</string>
-    <string name="edit_city">Enter City (Miami Township)</string>
-    <string name="edit_state">Enter State (Ohio)</string>
-    <string name="edit_zip">Enter Zip Code (45150)</string>
+    <string name="edit_street">Street Address (305 Apache Trail)</string>
+    <string name="edit_city">City (Miami Township)</string>
+    <string name="edit_state">State (Ohio)</string>
+    <string name="edit_zip">Zip Code (45150)</string>
     <!-- Financing -->
-    <string name="edit_pruchase_price">Enter Purchase Price $ ($65,000)</string>
-    <string name="edit_interest_rate">Enter Interest Rate %% (8.25%%)</string>
-    <string name="edit_term_years">Enter Term in Years (15)</string>
+    <string name="edit_pruchase_price">Purchase Price $ ($65,000)</string>
+    <string name="edit_interest_rate">Interest Rate %% (8.25%%)</string>
+    <string name="edit_term_years">Term in Years (15)</string>
     <!-- Investment -->
-    <string name="edit_downpayment_amount">Enter Downpayment Amount $ ($13000)</string>
-    <string name="edit_closing_costs">Enter Closing Costs $ ($1500)</string>
-    <string name="edit_furnishings_equipment">Enter Furnishing/Equipment Costs $ ($2500)</string>
-    <string name="edit_improvements">Enter Improvement Costs $ ($30000)</string>
+    <string name="edit_downpayment_amount">Downpayment Amount $ ($13000)</string>
+    <string name="edit_closing_costs">Closing Costs $ ($1500)</string>
+    <string name="edit_furnishings_equipment">Furnishing/Equipment Costs $ ($2500)</string>
+    <string name="edit_improvements">Improvement Costs $ ($30000)</string>
     <!-- Income -->
-    <string name="edit_monthly_rental">Enter Monthly Rental Cost $ ($1000)</string>
-    <string name="edit_on_time_discount">Enter On Time Discount $ ($0)</string>
-    <string name="edit_vacancy_allowance">Enter Vacancy Allowance %% (5.0%%)</string>
-    <string name="edit_other_income">Enter Other Monthly Income $ ($0)</string>
+    <string name="edit_monthly_rental">Monthly Rental Cost $ ($1000)</string>
+    <string name="edit_on_time_discount">On Time Discount $ ($0)</string>
+    <string name="edit_vacancy_allowance">Vacancy Allowance %% (5.0%%)</string>
+    <string name="edit_other_income">Other Monthly Income $ ($0)</string>
     <!-- Expenses (Annual) -->
-    <string name="edit_real_estate_taxes">Enter Annual Real Estate Taxes $ ($1043)</string>
-    <string name="edit_hazard_insurance">Enter Hazard Insurance Cost $ ($480)</string>
-    <string name="edit_repair_maintenance">Enter Repair/Maintenance Cost $ ($900)</string>
-    <string name="edit_annual_utilities">Enter Annual Utilities Cost $ ($600)</string>
-    <string name="edit_misc">Enter Miscellaneous Costs $ ($350)</string>
+    <string name="edit_real_estate_taxes">Annual Real Estate Taxes $ ($1043)</string>
+    <string name="edit_hazard_insurance">Hazard Insurance Cost $ ($480)</string>
+    <string name="edit_repair_maintenance">Repair/Maintenance Cost $ ($900)</string>
+    <string name="edit_annual_utilities">Annual Utilities Cost $ ($600)</string>
+    <string name="edit_misc">Miscellaneous Costs $ ($350)</string>
+    <!-- Other Values -->
+    <string name="edit_estimated_values">(Guess)Value after Improvements</string>
+    <string name="edit_land_value">Land Value %% (%% of Purchase Price)</string>
+    <string name="display_return_on_investment">Return On Investment</string>
+    <string name="edit_appreciated_future_value">(Guess)Appreciated Future Value</string>
+    <string name="edit_number_years_held">Number of Years Property Held</string>
+    <string name="display_tax_profit">Tax Profit - Estimated Loss</string>
+    <string name="display_annual_cash_flow">Annual Cash Flow</string>
     <!-- end -->
+    <!-- Arrays -->
+    <string-array name="action_list">
+        <item>Navigate</item>
+        <item>General Info</item>
+        <item>Financing</item>
+        <item>Investment</item>
+        <item>Income</item>
+        <item>Expenses</item>
+        <item>Other Values</item>
+        <item>Summary</item>
+        
+    </string-array>
+    <!-- end arrays -->
     <string name="button_send">Send</string>
     <string name="button_next">Next</string>
-    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="title_activity_general_info">General Info</string>
     <string name="title_activity_financing">Financing</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_investment">Investment</string>
     <string name="title_activity_income">Income</string>
     <string name="title_activity_expenses">Expenses</string>
     <string name="title_activity_summary">Summary</string>
+    <string name="title_activity_other_values">OtherValues</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

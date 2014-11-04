@@ -16,6 +16,12 @@ public final class R {
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
     }
+    public static final class array {
+        /**  end 
+ Arrays 
+         */
+        public static final int action_list=0x7f0c0000;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1091,33 +1097,49 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050076;
+        public static final int action_settings=0x7f050090;
         public static final int activity_chooser_view_content=0x7f050025;
+        public static final int adjusted_mortgage_loan=0x7f05007e;
         public static final int always=0x7f05000b;
-        public static final int annual_expenses=0x7f050075;
-        public static final int annual_rents=0x7f05006b;
-        public static final int annual_utilities=0x7f050073;
+        public static final int annual_cash_flow=0x7f05007d;
+        public static final int annual_expenses=0x7f05007c;
+        public static final int annual_rents=0x7f050072;
+        public static final int annual_return_on_investment=0x7f05008f;
+        public static final int annual_taxable_income=0x7f050086;
+        public static final int annual_utilities=0x7f05007a;
+        public static final int appreciated_future_value=0x7f050088;
         public static final int beginning=0x7f050011;
+        public static final int building_depreciation=0x7f050083;
+        public static final int capital_gains_tax=0x7f05008e;
         public static final int checkbox=0x7f05002d;
-        public static final int city_name=0x7f050057;
-        public static final int closing_costs=0x7f050062;
+        public static final int city_name=0x7f05005e;
+        public static final int closing_costs=0x7f050069;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f05003c;
+        public static final int debt_reduction=0x7f05008d;
         public static final int default_activity_button=0x7f050028;
+        public static final int depreciation_of_startup_improvements=0x7f050084;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
-        public static final int downpayment_amount=0x7f050061;
+        public static final int display_annual_cash_flow=0x7f050055;
+        public static final int display_return_on_investment=0x7f050059;
+        public static final int display_tax_profit=0x7f050057;
+        public static final int downpayment_amount=0x7f050068;
         public static final int dropdown=0x7f05000f;
         public static final int edit_annual_utilities=0x7f050042;
+        public static final int edit_appreciated_future_value=0x7f05005a;
         public static final int edit_city=0x7f050052;
         public static final int edit_closing_costs=0x7f05004d;
         public static final int edit_downpayment_amount=0x7f05004c;
+        public static final int edit_estimated_values=0x7f050056;
         public static final int edit_furnishings_equipment=0x7f05004e;
         public static final int edit_hazard_insurance=0x7f050040;
         public static final int edit_improvements=0x7f05004f;
         public static final int edit_interest_rate=0x7f050046;
+        public static final int edit_land_value=0x7f050058;
         public static final int edit_misc=0x7f050043;
         public static final int edit_monthy_rental=0x7f050048;
+        public static final int edit_number_years_held=0x7f05005b;
         public static final int edit_on_time_discount=0x7f050049;
         public static final int edit_other_income=0x7f05004b;
         public static final int edit_purchase_price=0x7f050045;
@@ -1130,42 +1152,50 @@ containing a value of this type.
         public static final int edit_vacancy_allowance=0x7f05004a;
         public static final int edit_zip=0x7f050054;
         public static final int end=0x7f050013;
+        public static final int estimated_value_after_improvements=0x7f05007f;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
-        public static final int fur_equip=0x7f050063;
-        public static final int gross_rental_income=0x7f05006d;
-        public static final int hazard_insurance=0x7f050071;
+        public static final int first_year_return_on_investment=0x7f050080;
+        public static final int fur_equip=0x7f05006a;
+        public static final int gross_rental_income=0x7f050074;
+        public static final int hazard_insurance=0x7f050078;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int improvements=0x7f050064;
-        public static final int interest_rate=0x7f05005d;
+        public static final int improvements=0x7f05006b;
+        public static final int income_realized_over_years=0x7f05008c;
+        public static final int initial_cash_invested=0x7f05008b;
+        public static final int interest_rate=0x7f050064;
+        public static final int land_value_percent=0x7f050082;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int main_page_description=0x7f050050;
         public static final int main_page_left_blank=0x7f05003d;
         public static final int main_page_right_blank=0x7f05003e;
         public static final int middle=0x7f050012;
-        public static final int minus_vacancy=0x7f05006c;
-        public static final int misc=0x7f050074;
-        public static final int monthly_rental=0x7f050067;
-        public static final int mortgage_amount=0x7f05005c;
-        public static final int mortgage_payment=0x7f05005f;
-        public static final int mortgage_payments=0x7f05006f;
+        public static final int minus_vacancy=0x7f050073;
+        public static final int misc=0x7f05007b;
+        public static final int monthly_rental=0x7f05006e;
+        public static final int mortgage_amount=0x7f050063;
+        public static final int mortgage_payment=0x7f050066;
+        public static final int mortgage_payments=0x7f050076;
         public static final int never=0x7f050009;
         public static final int next_button=0x7f050044;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
-        public static final int on_time_discount=0x7f050068;
-        public static final int other_income=0x7f05006a;
+        public static final int number_years_property_held=0x7f050089;
+        public static final int on_time_discount=0x7f05006f;
+        public static final int original_purchase_price=0x7f05008a;
+        public static final int other_income=0x7f050071;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
-        public static final int purchase_price=0x7f05005b;
+        public static final int purchase_price=0x7f050062;
         public static final int radio=0x7f05002f;
-        public static final int real_estate_taxes=0x7f050070;
-        public static final int repair_maintenance=0x7f050072;
+        public static final int real_estate_taxes=0x7f050077;
+        public static final int repair_maintenance=0x7f050079;
+        public static final int return_on_investment=0x7f050087;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
         public static final int search_button=0x7f050033;
@@ -1181,24 +1211,26 @@ containing a value of this type.
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
         public static final int split_action_bar=0x7f05001e;
-        public static final int state_name=0x7f050058;
-        public static final int street_name=0x7f050056;
+        public static final int state_name=0x7f05005f;
+        public static final int street_name=0x7f05005d;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int term_years=0x7f05005e;
+        public static final int tax_profit_loss_estimate=0x7f050081;
+        public static final int term_years=0x7f050065;
         public static final int title=0x7f05002b;
-        public static final int title_expenses=0x7f05006e;
-        public static final int title_financing=0x7f05005a;
-        public static final int title_income=0x7f050066;
-        public static final int title_investment=0x7f050060;
-        public static final int title_location=0x7f050055;
+        public static final int title_expenses=0x7f050075;
+        public static final int title_financing=0x7f050061;
+        public static final int title_income=0x7f05006d;
+        public static final int title_investment=0x7f050067;
+        public static final int title_location=0x7f05005c;
         public static final int top_action_bar=0x7f050020;
-        public static final int total_invested=0x7f050065;
+        public static final int total_depreciation=0x7f050085;
+        public static final int total_invested=0x7f05006c;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
-        public static final int vacancy_allowance=0x7f050069;
+        public static final int vacancy_allowance=0x7f050070;
         public static final int withText=0x7f05000c;
-        public static final int zip_code=0x7f050059;
+        public static final int zip_code=0x7f050060;
     }
     public static final class integer {
         /**  The maximum number of action buttons that should be permitted within
@@ -1250,23 +1282,27 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_display_message=0x7f030018;
-        public static final int activity_expenses=0x7f030019;
-        public static final int activity_financing=0x7f03001a;
-        public static final int activity_income=0x7f03001b;
-        public static final int activity_investment=0x7f03001c;
-        public static final int activity_main=0x7f03001d;
-        public static final int activity_summary=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int actionbar_white_spinner=0x7f030018;
+        public static final int actionbar_white_spinner_dropdown=0x7f030019;
+        public static final int activity_display_message=0x7f03001a;
+        public static final int activity_expenses=0x7f03001b;
+        public static final int activity_financing=0x7f03001c;
+        public static final int activity_income=0x7f03001d;
+        public static final int activity_investment=0x7f03001e;
+        public static final int activity_main=0x7f03001f;
+        public static final int activity_other_values=0x7f030020;
+        public static final int activity_summary=0x7f030021;
+        public static final int support_simple_spinner_dropdown_item=0x7f030022;
     }
     public static final class menu {
-        public static final int display_message=0x7f0c0000;
-        public static final int expenses=0x7f0c0001;
-        public static final int financing=0x7f0c0002;
-        public static final int income=0x7f0c0003;
-        public static final int investment=0x7f0c0004;
-        public static final int main=0x7f0c0005;
-        public static final int summary=0x7f0c0006;
+        public static final int display_message=0x7f0d0000;
+        public static final int expenses=0x7f0d0001;
+        public static final int financing=0x7f0d0002;
+        public static final int income=0x7f0d0003;
+        public static final int investment=0x7f0d0004;
+        public static final int main=0x7f0d0005;
+        public static final int other_values=0x7f0d0006;
+        public static final int summary=0x7f0d0007;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1311,24 +1347,33 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
-        public static final int button_next=0x7f0a0026;
-        /**  end 
+        public static final int button_next=0x7f0a002d;
+        /**  end arrays 
          */
-        public static final int button_send=0x7f0a0025;
+        public static final int button_send=0x7f0a002c;
+        public static final int display_annual_cash_flow=0x7f0a002b;
+        public static final int display_return_on_investment=0x7f0a0027;
+        public static final int display_tax_profit=0x7f0a002a;
         public static final int edit_annual_utilities=0x7f0a0023;
+        public static final int edit_appreciated_future_value=0x7f0a0028;
         public static final int edit_city=0x7f0a0012;
         public static final int edit_closing_costs=0x7f0a0019;
         /**  Investment 
          */
         public static final int edit_downpayment_amount=0x7f0a0018;
+        /**  Other Values 
+         */
+        public static final int edit_estimated_values=0x7f0a0025;
         public static final int edit_furnishings_equipment=0x7f0a001a;
         public static final int edit_hazard_insurance=0x7f0a0021;
         public static final int edit_improvements=0x7f0a001b;
         public static final int edit_interest_rate=0x7f0a0016;
+        public static final int edit_land_value=0x7f0a0026;
         public static final int edit_misc=0x7f0a0024;
         /**  Income 
          */
         public static final int edit_monthly_rental=0x7f0a001c;
+        public static final int edit_number_years_held=0x7f0a0029;
         public static final int edit_on_time_discount=0x7f0a001d;
         public static final int edit_other_income=0x7f0a001f;
         /**  Financing 
@@ -1343,14 +1388,15 @@ containing a value of this type.
         public static final int edit_term_years=0x7f0a0017;
         public static final int edit_vacancy_allowance=0x7f0a001e;
         public static final int edit_zip=0x7f0a0014;
-        public static final int hello_world=0x7f0a0029;
+        public static final int hello_world=0x7f0a0035;
         public static final int main_page_description=0x7f0a000e;
-        public static final int title_activity_display_message=0x7f0a0027;
-        public static final int title_activity_expenses=0x7f0a002c;
-        public static final int title_activity_financing=0x7f0a0028;
-        public static final int title_activity_income=0x7f0a002b;
-        public static final int title_activity_investment=0x7f0a002a;
-        public static final int title_activity_summary=0x7f0a002d;
+        public static final int title_activity_expenses=0x7f0a0032;
+        public static final int title_activity_financing=0x7f0a002f;
+        public static final int title_activity_general_info=0x7f0a002e;
+        public static final int title_activity_income=0x7f0a0031;
+        public static final int title_activity_investment=0x7f0a0030;
+        public static final int title_activity_other_values=0x7f0a0034;
+        public static final int title_activity_summary=0x7f0a0033;
         /**  Property Locaiton 
          */
         public static final int title_location=0x7f0a0010;

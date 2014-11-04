@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+ 	    android:id = "@+id/main_page_left_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentLeft = "true"
+ 	    />
+    
+ 	<TextView
+ 	    android:id = "@+id/main_page_right_blank"
+ 	    android:layout_width = "20dp"
+ 	    android:layout_height = "fill_parent"
+ 	    android:layout_alignParentRight = "true"
+ 	    />
+ 	<TextView android:id = "@+id/display_annual_cash_flow"
+        	android:text = "@string/display_annual_cash_flow"
+        	android:layout_centerHorizontal = "true"
+      		android:textSize = "18sp"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+    		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+ 	
+    
+    <EditText android:id = "@+id/edit_estimated_values"
+        	android:hint = "@string/edit_estimated_values" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"
+      		android:layout_below = "@id/display_annual_cash_flow"
+        	/>
+    
+    <TextView android:id = "@+id/display_tax_profit"
+        	android:text = "@string/display_tax_profit"
+        	android:layout_centerHorizontal = "true"
+      		android:textSize = "18sp"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_estimated_values"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+    		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <EditText android:id = "@+id/edit_land_value"
+        	android:hint = "@string/edit_land_value" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/display_tax_profit"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+    		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <TextView android:id = "@+id/display_return_on_investment"
+        	android:text = "@string/display_return_on_investment"
+        	android:layout_centerHorizontal = "true"
+      		android:textSize = "18sp"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_land_value"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+    		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+   <EditText android:id = "@+id/edit_appreciated_future_value"
+        	android:hint = "@string/edit_appreciated_future_value" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/display_return_on_investment"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    <EditText android:id = "@+id/edit_number_years_held"
+        	android:hint = "@string/edit_number_years_held" 
+        	android:inputType="number"
+        	
+        	android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_below = "@id/edit_appreciated_future_value"
+        	android:layout_toLeftOf="@id/main_page_right_blank"
+      		android:layout_toRightOf = "@id/main_page_left_blank"/>
+    
+    
+    <Button android:id = "@+id/next_button" 
+        android:text = "@string/button_next" 
+        android:onClick="sendMessage"
+        
+        
+        android:layout_width= "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@id/edit_number_years_held"
+        android:layout_centerHorizontal = "true"
+        android:layout_toLeftOf="@id/main_page_right_blank"
+      	android:layout_toRightOf = "@id/main_page_left_blank"
+        />
+
+
+</RelativeLayout>

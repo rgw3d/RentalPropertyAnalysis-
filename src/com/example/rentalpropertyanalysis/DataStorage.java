@@ -1,5 +1,7 @@
 package com.example.rentalpropertyanalysis;
 
+import java.text.DecimalFormat;
+
 public class DataStorage {
 	//property location
 	public static String StreetAddress = "305 Apache Trail";
@@ -31,17 +33,38 @@ public class DataStorage {
 	public static double AnnualUtilities = 600;
 	public static double Miscellaneous = 350;
 	
+	//Other Values
+	public static double EstimatedValueAfterImprovements = 155000;
+	public static double LandValuePercent = 20;
+	public static double AppreciatedFutureValue = 175000;
+	public static double NumberYearsHeld;
+	
+	
+	
 	
 	public static double getMortgageAmount(){
 		return PurchasePrice - DownPaymentAmount;
 	}
 	
-	public static double getMortgagePayment(){
-		double v = (1+(InterestRate/12));
-		double t = (-(TermYears/12)*12);
-		double result=(getMortgageAmount()*(InterestRate/12))/(1-Math.pow(v,t));
-		 
-		return result;
+	public static double getMortgagePayment(){//this is wrong
+		//return (getMortgageAmount()*(InterestRate/12))/Math.pow((1-(1+(InterestRate/12))),-(12*TermYears));
+		///P = L[c(1 + c)n]/[(1 + c)n - 1]
+		/*
+		L = Loan amount
+				F = Points and all other lender fees
+				P = Monthly payment
+				n = Month when the balance is paid in full
+				Bn = Balance in month n
+		*/
+		
+		double monthlyRate = InterestRate/100/12;
+		double termInMonths = TermYears*12;
+		
+		double monthlyPayment = 
+	            (getMortgageAmount()*monthlyRate) / 
+	               (1-Math.pow(1+monthlyRate, -termInMonths));
+		
+		return monthlyPayment;
 	}
 	
 	public static double getTotalInvested(){
@@ -53,7 +76,7 @@ public class DataStorage {
 	}
 
 	public static double getMinusVacancyDiscounts() {
-		return (OnTimeDiscount*12) +(VacancyAllowance*getAnnualRents());
+		return -((OnTimeDiscount*12) +(VacancyAllowance/100*getAnnualRents()));
 	}
 
 	public static double getGrossRentalIncome() {
@@ -67,6 +90,61 @@ public class DataStorage {
 	public static double getAnnualExpenses() {
 		return getMortgagePaymentsAnnual()+RealEstateTaxes+HazardInsurance+RepairMaintenance+AnnualUtilities+Miscellaneous;
 	}
+	
+	public static double getAnnualCashFlow(){
+		return getGrossRentalIncome() - getAnnualExpenses();
+	}
+
+	public static double getAdjustedMortgage() {
+		double rate = InterestRate/12;
+		double paymentPeriods = TermYears*12;
+		double amount = getMortgageAmount();
+		double start = 1;
+		double end = 12;
+		double type = 1;
+		
+		return 1;
+	}
+	
+	public static double getFirstYearReturnOnInvest(){
+		return (EstimatedValueAfterImprovements - PurchasePrice + getAdjustedMortgage() + getAnnualCashFlow())/getTotalInvested();
+	}
+
+	public static double getBuildingDepreciation() {
+		return PurchasePrice*(1-LandValuePercent/100)/27.5;
+	}
+
+	public static double getDepreciationOfStartupImprovements() {
+		return FurAndEquip/5;
+	}
+
+	public static double getTotalDepreciation() {
+		return getBuildingDepreciation()+getDepreciationOfStartupImprovements();
+	}
+
+	public static double getAnnualTaxableIncome() {
+		return getAnnualCashFlow()-getTotalDepreciation();
+	}
+
+	public static double getIncomeRealized() {
+		return (getAnnualCashFlow()*NumberYearsHeld) + (getAnnualCashFlow()*.05*(NumberYearsHeld-1));
+	}
+
+	public static double getDebtReduction() {
+		// TODO Auto-generated method stub
+		return 6000;
+	}
+
+	public static double getCapitalGainsTax() {
+		
+		return .2*(AppreciatedFutureValue-(PurchasePrice+Improvements));
+		
+	}
+
+	public static double getAnnualReturnOnInvestment() {
+		return (AppreciatedFutureValue - PurchasePrice + getIncomeRealized() + getDebtReduction() - getCapitalGainsTax())/getTotalInvested()/NumberYearsHeld;
+	}
+	
 	
 
 }

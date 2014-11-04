@@ -1,29 +1,67 @@
 package com.example.rentalpropertyanalysis;
 
+import android.app.ActionBar;
+import android.app.ActionBar.OnNavigationListener;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements OnNavigationListener {
 	
-	public final static String EXTRA_MESSAGE  ="com.example.rentalpropertyanalysis.MESSAGE";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        
+        setUpActionBarSpinner();
+        
     }
+    
+	public void setUpActionBarSpinner(){
+    	final ActionBar actionBar = getActionBar();
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+        
+        ArrayAdapter<CharSequence> mSpinnerAdapter = ArrayAdapter.createFromResource(this,
+               R.array.action_list, R.layout.actionbar_white_spinner);
+        mSpinnerAdapter.setDropDownViewResource(R.layout.actionbar_white_spinner_dropdown);
+        actionBar.setListNavigationCallbacks(mSpinnerAdapter, this);
+        
+        
+    }
+    
+    @Override
+    public boolean onNavigationItemSelected(int position, long id) {
+
+		storeInput();
+		
+		Class<?> tmpClass = ActionBarListener.getDestination(position);
+		if(tmpClass!=null && tmpClass!=MainActivity.class){
+			Intent intent = new Intent(this,ActionBarListener.getDestination(position));
+			startActivity(intent);
+			
+	    	return true;
+		}
+		return false;
+    
+    }
+
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+        
+        for (int i = 0; i < menu.size(); i++)
+            menu.getItem(i).setVisible(false);
+        
         return true;
     }
 
@@ -41,7 +79,15 @@ public class MainActivity extends ActionBarActivity {
     
     public void sendMessage(View view){
     	
-    	EditText editStreet = (EditText) findViewById(R.id.edit_street);
+    	storeInput();
+    	
+    	Intent intent = new Intent(this, Financing.class);
+    	
+    	startActivity(intent);
+    }
+
+	private void storeInput() {
+		EditText editStreet = (EditText) findViewById(R.id.edit_street);
     	EditText editCity = (EditText) findViewById(R.id.edit_city);
     	EditText editState = (EditText) findViewById(R.id.edit_state);
     	EditText editZip = (EditText) findViewById(R.id.edit_zip);
@@ -58,12 +104,5 @@ public class MainActivity extends ActionBarActivity {
     	if(!editZip.getText().toString().equals("")){//not equal nothing
     		DataStorage.Zip = editZip.getText().toString();
     	}
-    	
-    	Intent intent = new Intent(this, Financing.class);
-    	
-    	
-    	//intent.putExtra(EXTRA_MESSAGE, message);
-    	
-    	startActivity(intent);
-    }
+	}
 }
